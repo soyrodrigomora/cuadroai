@@ -1,0 +1,44 @@
+.cuadro {
+    width: 150px;
+    height: 150px;
+    background-color: #3498db;
+    position: absolute;
+    animation: moverCuadro 5s infinite, cambiarColor 3s alternate infinite;
+}
+
+/* Animación de movimiento personalizada */
+@keyframes moverCuadro {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 0;
+        left: 200px;
+    }
+    50% {
+        top: 200px;
+        left: 200px;
+    }
+    75% {
+        top: 200px;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+/* Animación de cambio de color */
+@keyframes cambiarColor {
+    0% {
+        background-color: #3498db;
+    }
+    50% {
+        background-color: #3ce76f;
+    }
+    100% {
+        background-color: #093a5a;
+    }
+}
